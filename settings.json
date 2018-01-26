@@ -1,0 +1,48 @@
+{
+    //How to disable crash reporting
+    "telemetry.enableCrashReporter": false,
+    
+    //How to disable telemetry reporting
+    "telemetry.enableTelemetry": false,
+            
+    "editor.fontFamily": "Inconsolata, Consolas, 'Courier New', monospace",
+    "editor.fontSize": 18,
+    "editor.wordWrap": "on",
+            
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Dracula",
+    
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    
+    "vim.useCtrlKeys": false,
+    
+    "terminal.integrated.fontSize": 18,
+    
+    "editor.multiCursorModifier": "ctrlCmd",
+    
+    "[go]": {
+        "editor.insertSpaces": false
+    }, 
+
+    "java.errors.incompleteClasspath.severity": "ignore",
+            
+    "vsicons.dontShowNewVersionMessage": true,
+            
+    "window.zoomLevel": 0,
+            
+    "workbench.sideBar.location": "left",
+            
+    "workbench.startupEditor": "newUntitledFile",
+        
+    // Configure file associations to languages (e.g. "*.extension": "html"). These have precedence over the default associations of the languages installed.
+    "files.associations": { 
+        "*.htaccess": "txt"
+    }
+}
+        
+    
