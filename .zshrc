@@ -122,7 +122,6 @@ alias projects='cd /Users/e/Projects'
 alias gs='git status'
 alias dl='youtube-dl'
 alias dl2='youtube-dl --ignore-config'
-alias makata='cd ~/Projects/cscie71/agileclass/makata'
 alias clean='echo "" > ~/.zsh_history & exec $SHELL -l'
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
 alias hidefiles="defaults write com.apple.finder AppleShowAllFiles NO && killall Finder"
