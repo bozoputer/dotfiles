@@ -126,4 +126,3 @@ alias clean='echo "" > ~/.zsh_history & exec $SHELL -l'
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
 alias hidefiles="defaults write com.apple.finder AppleShowAllFiles NO && killall Finder"
 alias serve="http-server -o"
-alias ..='cd ..'
