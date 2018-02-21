@@ -123,6 +123,9 @@ alias gs='git status'
 alias dl='youtube-dl'
 alias dl2='youtube-dl --ignore-config'
 alias clean='echo "" > ~/.zsh_history & exec $SHELL -l'
+alias serve="http-server -o"
+
+# Unused aliases
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
 alias hidefiles="defaults write com.apple.finder AppleShowAllFiles NO && killall Finder"
-alias serve="http-server -o"
+
