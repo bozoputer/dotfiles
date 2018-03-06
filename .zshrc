@@ -107,7 +107,6 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -123,9 +122,9 @@ alias gs='git status'
 alias dl='youtube-dl'
 alias dl2='youtube-dl --ignore-config'
 alias clean='echo "" > ~/.zsh_history & exec $SHELL -l'
-alias serve="http-server -o"
+alias serve="http-server -o -c-1"
+alias hes="cd /Users/e/Desktop/HES/_Spring2018"
 
 # Unused aliases
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
 alias hidefiles="defaults write com.apple.finder AppleShowAllFiles NO && killall Finder"
-
