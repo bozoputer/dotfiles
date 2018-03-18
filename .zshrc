@@ -124,7 +124,8 @@ alias dl2='youtube-dl --ignore-config'
 alias clean='echo "" > ~/.zsh_history & exec $SHELL -l'
 alias serve="http-server -o -c-1"
 alias hes="cd /Users/e/Desktop/HES/_Spring2018"
-
+alias crap="create-react-app"
+alias crapn="create-react-app"
 # Unused aliases
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
 alias hidefiles="defaults write com.apple.finder AppleShowAllFiles NO && killall Finder"
