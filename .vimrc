@@ -7,6 +7,10 @@ syntax on
 " map the keys jk to the Escape key to improve efficiency.
 imap jk <Esc> 
 
+" map the keys 'jk' to the Escape key in visual mode
+xmap jk <Esc> 
+
+
 " Security
 set modelines=0
 
