@@ -43,7 +43,9 @@
     "files.associations": { 
         "*.htaccess": "txt",
         "*.pug": "jade"
-    }
+    },
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false
 }
         
     
