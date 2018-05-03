@@ -45,7 +45,8 @@
         "*.pug": "jade"
     },
     "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "editor.renderWhitespace": "all"
 }
         
     
