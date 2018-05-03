@@ -119,14 +119,14 @@ alias dd='cd /Users/e/Desktop'
 alias desktop='/Users/e/Desktop'
 alias projects='cd /Users/e/Projects'
 alias gs='git status'
-alias dl='youtube-dl'
-alias dl2='youtube-dl --ignore-config'
+alias dl='cd /Users/e/Desktop && youtube-dl'
+alias dl2='cd /Users/e/Desktop && youtube-dl --ignore-config'
 alias clean='echo "" > ~/.zsh_history & exec $SHELL -l'
 alias serve="http-server -o -c-1"
 alias hes="cd /Users/e/Desktop/HES/_Spring2018 && ls"
 alias e31="open /Users/e/Desktop/HES/_Spring2018/CSCI\ E-31\ -\ NodeJS" 
 alias crap="create-react-app"
-alias crapn="create-react-app"
+alias crapn="create-react-native-app"
 alias eject="drutil tray eject"
 # Unused aliases
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
