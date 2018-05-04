@@ -46,7 +46,11 @@
     },
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
+
+    "emmet.variables": {
+        "charset": "utf-8"
+    }
 }
         
     
