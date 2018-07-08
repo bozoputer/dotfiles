@@ -111,7 +111,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dd="cd /Users/e/Desktop"
-alias desktop="/Users/e/Desktop"
 alias projects="cd /Users/e/Projects"
 alias gs="git status"
 alias dl="cd /Users/e/Desktop && youtube-dl"
@@ -122,7 +121,6 @@ alias hes="cd /Users/e/Desktop/HES/_Summer2018 && ls"
 alias crap="create-react-app"
 alias crapn="create-react-native-app"
 alias eject="drutil tray eject"
-alias udacity="cd ~/Projects/Udacity/React && ls"
-# Unused aliases
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
 alias hidefiles="defaults write com.apple.finder AppleShowAllFiles NO && killall Finder"
+# Unused aliases
