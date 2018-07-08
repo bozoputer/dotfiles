@@ -5,8 +5,10 @@
     //How to disable telemetry reporting
     "telemetry.enableTelemetry": false,
             
-    "editor.fontFamily": "Inconsolata, Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "Operator Mono Lig",
+    "editor.fontWeight": "300",
     "editor.fontSize": 18,
+    "editor.fontLigatures": true,
     "editor.wordWrap": "on",
             
     "workbench.iconTheme": "vscode-icons",
@@ -50,7 +52,18 @@
 
     "emmet.variables": {
         "charset": "utf-8"
-    }
+    },
+    "bracketPairColorizer.consecutivePairColors": [
+        "()",
+        "[]",
+        "{}",
+        [
+            "#ff79c6",
+            "#bd93f9",
+            "#50fa7b"
+        ],
+        "#ff5555"
+    ]
 }
         
     
