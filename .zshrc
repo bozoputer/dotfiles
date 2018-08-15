@@ -1,10 +1,10 @@
-# If you come from bash you might have to change your $PATH.
+: If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # Add MAMP PHP to PATH
-export PATH=/Applications/MAMP/bin/php/php7.1.0/bin:$PATH
+export PATH=/Applications/MAMP/bin/php/php7.1.6/bin:$PATH
 
 # Add Apache Ant to PATH
 export PATH=/Users/e/apache-ant-1.10.1/bin:$PATH
@@ -115,7 +115,7 @@ alias projects="cd /Users/e/Projects"
 alias gs="git status"
 alias dl="cd /Users/e/Desktop && youtube-dl"
 alias dl2="cd /Users/e/Desktop && youtube-dl --ignore-config"
-alias clean="echo "" > ~/.zsh_history & exec $SHELL -l"
+alias chistory="echo "" > ~/.zsh_history & exec $SHELL -l"
 alias serve="http-server -o -c-1"
 alias hes="cd /Users/e/Desktop/HES/_Summer2018 && ls"
 alias eject="drutil tray eject"

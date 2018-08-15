@@ -63,7 +63,11 @@
             "#50fa7b"
         ],
         "#ff5555"
-    ]
+    ],
+    // Use ZSH as the  integrated terminal shell.
+    "terminal.integrated.shell.osx": "zsh",
+
+    "terminal.integrated.fontFamily": "Droid Sans Mono for Powerline"
 }
         
     

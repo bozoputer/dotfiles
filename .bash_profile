@@ -25,7 +25,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 source "`brew --prefix`/etc/grc.bashrc"
 
 # Add MAMP PHP to PATH
-export PATH=/Applications/MAMP/bin/php/php7.1.0/bin:$PATH
+export PATH=/Applications/MAMP/bin/php/php7.1.6/bin:$PATH
 
 # Add Apache Ant to PATH
 export PATH=/Users/e/apache-ant-1.10.1/bin:$PATH
