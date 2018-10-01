@@ -13,6 +13,7 @@ xmap jk <Esc>
 
 " Security
 set modelines=0
+set nomodeline
 
 " Show line numbers
 set number
