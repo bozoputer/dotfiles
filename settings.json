@@ -1,73 +1,94 @@
 {
-    //How to disable crash reporting
-    "telemetry.enableCrashReporter": false,
-    
-    //How to disable telemetry reporting
-    "telemetry.enableTelemetry": false,
-            
-    "editor.fontFamily": "Operator Mono Lig",
-    "editor.fontWeight": "300",
-    "editor.fontSize": 18,
-    "editor.fontLigatures": true,
-    "editor.wordWrap": "on",
-            
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Dracula",
-    
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "k"],
-            "after": ["<Esc>"]
-        }
+  //How to disable crash reporting
+  "telemetry.enableCrashReporter": false,
+  //How to disable telemetry reporting
+  "telemetry.enableTelemetry": false,
+  "editor.fontFamily": "Operator Mono Lig",
+  "editor.fontWeight": "500",
+  "editor.fontSize": 18,
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Dracula",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.useCtrlKeys": false,
+  "terminal.integrated.fontSize": 18,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "[go]": {
+    "editor.insertSpaces": false
+  },
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "vsicons.dontShowNewVersionMessage": true,
+  "window.zoomLevel": 0,
+  "workbench.sideBar.location": "left",
+  "workbench.startupEditor": "newUntitledFile",
+  // Configure file associations to languages (e.g. "*.extension": "html"). These have precedence over the default associations of the languages installed.
+  "files.associations": {
+    "*.htaccess": "txt",
+    "*.pug": "jade"
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.renderWhitespace": "all",
+  "emmet.variables": {
+    "charset": "utf-8"
+  },
+  "bracketPairColorizer.consecutivePairColors": [
+    "()",
+    "[]",
+    "{}",
+    [
+      "#ff79c6",
+      "#bd93f9",
+      "#50fa7b"
     ],
-    
-    "vim.useCtrlKeys": false,
-    
-    "terminal.integrated.fontSize": 18,
-    
-    "editor.multiCursorModifier": "ctrlCmd",
-    
-    "[go]": {
-        "editor.insertSpaces": false
-    }, 
-
-    "java.errors.incompleteClasspath.severity": "ignore",
-            
-    "vsicons.dontShowNewVersionMessage": true,
-            
-    "window.zoomLevel": 0,
-            
-    "workbench.sideBar.location": "left",
-            
-    "workbench.startupEditor": "newUntitledFile",
-        
-    // Configure file associations to languages (e.g. "*.extension": "html"). These have precedence over the default associations of the languages installed.
-    "files.associations": { 
-        "*.htaccess": "txt",
-        "*.pug": "jade"
-    },
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "editor.renderWhitespace": "all",
-
-    "emmet.variables": {
-        "charset": "utf-8"
-    },
-    "bracketPairColorizer.consecutivePairColors": [
-        "()",
-        "[]",
-        "{}",
-        [
-            "#ff79c6",
-            "#bd93f9",
-            "#50fa7b"
+    "#ff5555"
+  ],
+  // Use ZSH as the  integrated terminal shell.
+  "terminal.integrated.shell.osx": "zsh",
+  "terminal.integrated.fontFamily": "Droid Sans Mono for Powerline",
+  // https://github.com/kosimst/FiraFlott
+  // Fixes italics for Operator Mono
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italic (=FlottFlott)
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "constant", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js", //class keyword
         ],
-        "#ff5555"
-    ],
-    // Use ZSH as the  integrated terminal shell.
-    "terminal.integrated.shell.osx": "zsh",
-
-    "terminal.integrated.fontFamily": "Droid Sans Mono for Powerline"
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  }
 }
-        
-    
