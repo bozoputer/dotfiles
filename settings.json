@@ -8,8 +8,7 @@
   "editor.fontSize": 18,
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "New Moon",
   "vim.insertModeKeyBindings": [
     {
       "before": [
@@ -21,14 +20,13 @@
       ]
     }
   ],
-  "vim.useCtrlKeys": false,
+  "vim.useCtrlKeys": true,
   "terminal.integrated.fontSize": 18,
   "editor.multiCursorModifier": "ctrlCmd",
   "[go]": {
     "editor.insertSpaces": false
   },
   "java.errors.incompleteClasspath.severity": "ignore",
-  "vsicons.dontShowNewVersionMessage": true,
   "window.zoomLevel": 0,
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
@@ -55,7 +53,7 @@
     "#ff5555"
   ],
   // Use ZSH as the  integrated terminal shell.
-  "terminal.integrated.shell.osx": "zsh",
+  "terminal.integrated.shell.osx": "/bin/zsh",
   "terminal.integrated.fontFamily": "Droid Sans Mono for Powerline",
   // https://github.com/kosimst/FiraFlott
   // Fixes italics for Operator Mono
@@ -90,5 +88,28 @@
         }
       }
     ]
-  }
+  },
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": "#92d192",
+  "vim.statusBarColors.insert": "#f2777a",
+  "vim.statusBarColors.visual": "#ac8d58",
+  "vim.statusBarColors.visualline": "#50fa7b",
+  "vim.statusBarColors.visualblock": "#A3BE8C",
+  "vim.statusBarColors.replace": "#D08770",
+  
+  "workbench.colorCustomizations": {
+    "[New Moon]": {
+      "statusBar.foreground": "#ffffff"
+    },
+    "statusBar.background": "#f2777a",
+    "statusBar.noFolderBackground": "#f2777a",
+    "statusBar.debuggingBackground": "#f2777a"
+  },
+    "python.pythonPath": "/usr/local/bin/python3",
+    "python.linting.pylintEnabled": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.parameterHints.enabled": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "terminal.external.osxExec": "iTerm.app"
 }
