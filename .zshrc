@@ -1,4 +1,4 @@
-: If you come from bash you might have to change your $PATH.
+# If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
@@ -14,6 +14,9 @@ export PATH=$HOME/.composer/vendor/bin:$PATH
 
 # Add Yarn to PATH
 export PATH="$PATH:yarn global bin" 
+
+# Add personal bin directory to PATH
+export PATH=$PATH:/Users/e/bin
 
 # Add MongoDB to PATH
 # export PATH=$HOME/mongodb/mongodb-osx-x86_64-3.6.0/bin:$PATH
@@ -77,7 +80,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git z zsh-syntax-highlighting zsh-nvm
+  git z zsh-syntax-highlighting osx
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -102,6 +105,11 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+# nvm
+# source ~/dotfiles/.zshrc
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -112,15 +120,20 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dd="cd /Users/e/Desktop"
 alias projects="cd /Users/e/Projects"
+alias documents="cd /Users/e/Documents"
 alias gs="git status"
 alias dl="cd /Users/e/Desktop && youtube-dl"
 alias dl2="cd /Users/e/Desktop && youtube-dl --ignore-config"
 alias chistory="echo "" > ~/.zsh_history & exec $SHELL -l"
 alias serve="http-server -o -c-1"
-alias hes="cd /Users/e/Desktop/HES/_Summer2018 && ls"
 alias eject="drutil tray eject"
+alias crap="create-react-app"
+alias udacity="cd /Users/e/Desktop/Udacity-ReactND"
+alias caffeine="caffeinate -t 144000 &"
+
 # Unused aliases
 # alias showfiles="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
 # alias hidefiles="defaults write com.apple.finder AppleShowAllFiles NO && killall Finder"
-# alias crap="create-react-app"
+# above aliases can be done with MacOS shortcut: ⌘ ⇧ .
+
 # alias crapn="create-react-native-app"
