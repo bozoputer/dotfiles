@@ -9,18 +9,12 @@
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
     },
-    // {
-    //     "key": "shift+cmd+\\",
-    //     "command": "editor.action.jumpToBracket",
-    //     "when": "editorTextFocus"
-    // },
-    // {
-    //     "key": "shift+cmd+\\",
-    //     "command": "-editor.action.jumpToBracket",
-    //     "when": "editorTextFocus"
-    // },
+    {
+        "key": "shift+cmd+\\",
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
 
-    // Change default tabs function 
     {
         "key": "cmd+shift+5",
         "command": "editor.emmet.action.matchTag"

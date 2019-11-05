@@ -101,9 +101,9 @@
     "[New Moon]": {
       "statusBar.foreground": "#ffffff"
     },
-    "statusBar.background": "#92d192",
-    "statusBar.noFolderBackground": "#92d192",
-    "statusBar.debuggingBackground": "#92d192"
+    "statusBar.background": "#50fa7b",
+    "statusBar.noFolderBackground": "#50fa7b",
+    "statusBar.debuggingBackground": "#50fa7b"
   },
     "python.pythonPath": "/usr/local/bin/python3",
     "python.linting.pylintEnabled": false,
