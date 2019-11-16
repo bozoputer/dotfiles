@@ -18,6 +18,9 @@ export PATH="$PATH:yarn global bin"
 # Add personal bin directory to PATH
 export PATH=$PATH:/Users/e/bin
 
+# Add Ruby to PATH
+export PATH=$PATH:/Users/e/.gem/ruby/2.6.0/bin
+
 # Add MongoDB to PATH
 # export PATH=$HOME/mongodb/mongodb-osx-x86_64-3.6.0/bin:$PATH
 
