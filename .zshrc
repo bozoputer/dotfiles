@@ -24,6 +24,9 @@ export PATH=$PATH:/Users/e/.gem/ruby/2.6.0/bin
 # Add MongoDB to PATH
 # export PATH=$HOME/mongodb/mongodb-osx-x86_64-3.6.0/bin:$PATH
 
+# Add node_modules to PATH
+export PATH=$PATH:./node_modules/.bin
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/e/.oh-my-zsh
 
@@ -122,7 +125,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dd="cd /Users/e/Desktop"
-alias projects="cd /Users/e/Projects"
+alias projects="cd /Users/e/Projects && ls"
 alias documents="cd /Users/e/Documents"
 alias gs="git status"
 alias dl="cd /Users/e/Desktop && youtube-dl"
