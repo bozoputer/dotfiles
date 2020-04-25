@@ -54,7 +54,7 @@ ZSH_THEME="cobalt2"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -128,15 +128,18 @@ alias dd="cd /Users/e/Desktop"
 alias projects="cd /Users/e/Projects && ls"
 alias documents="cd /Users/e/Documents"
 alias gs="git status"
-alias dl="cd /Users/e/Desktop && youtube-dl"
-alias dl2="cd /Users/e/Desktop && youtube-dl --ignore-config"
+alias dl="cd ~/Desktop && youtube-dl"
+alias dl2="cd ~/Desktop && youtube-dl --ignore-config"
 alias chistory="echo "" > ~/.zsh_history & exec $SHELL -l"
 alias serve="http-server -o -c-1"
+alias live="live-server"
 alias eject="drutil tray eject"
 alias crap="create-react-app"
-alias udacity="cd /Users/e/Desktop/Udacity-ReactND"
 alias caffeine="caffeinate -t 144000 &"
-
+alias push="git push origin HEAD"
+alias zsh="vim ~/.zshrc"
+alias tuts="cd ~/projects/tutelage && ls"
+alias beats="cd ~/projects/beats && ls"
 # Unused aliases
 # alias showfiles="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
 # alias hidefiles="defaults write com.apple.finder AppleShowAllFiles NO && killall Finder"

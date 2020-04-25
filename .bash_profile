@@ -1,3 +1,4 @@
+source ~/.profile
 # Aliases
 alias ls='ls -GFh'
 alias htdocs='cd /Applications/MAMP/htdocs'
