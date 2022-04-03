@@ -1,3 +1,7 @@
+# Fig pre block. Keep at the top of this file.
+export PATH="${PATH}:${HOME}/.local/bin"
+eval "$(fig init zsh pre)"
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -30,11 +34,14 @@ export PATH=$PATH:./node_modules/.bin
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/e/.oh-my-zsh
 
+# Path to git
+export PATH=/usr/local/git/bin/git:$PATH
+
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="dracula"
-ZSH_THEME="cobalt2"
+ZSH_THEME="headline"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -86,7 +93,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git z zsh-syntax-highlighting osx
+  git z zsh-syntax-highlighting macos
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -124,6 +131,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ll="ls -al"
 alias dd="cd /Users/e/Desktop"
 alias projects="cd /Users/e/Projects && ls"
 alias documents="cd /Users/e/Documents"
@@ -134,15 +142,34 @@ alias chistory="echo "" > ~/.zsh_history & exec $SHELL -l"
 alias serve="http-server -o -c-1"
 alias live="live-server"
 alias eject="drutil tray eject"
-alias crap="create-react-app"
 alias caffeine="caffeinate -t 144000 &"
 alias push="git push origin HEAD"
 alias zsh="vim ~/.zshrc"
-alias tuts="cd ~/projects/tutelage && ls"
-alias beats="cd ~/projects/beats && ls"
+alias globals="npm list -g --depth 0"
+alias shot="screencapture -x -T 3 ~/Desktop/sc.png"
+# CODESMITH STUFF
+alias cs="cd /Users/e/Projects/Codesmith && ls"
+alias hhpull="cd /Users/e/Projects/Codesmith/Hack-Hours && git pull upstream main"
+
 # Unused aliases
 # alias showfiles="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
 # alias hidefiles="defaults write com.apple.finder AppleShowAllFiles NO && killall Finder"
 # above aliases can be done with MacOS shortcut: ⌘ ⇧ .
 
 # alias crapn="create-react-native-app"
+
+# zsh-completions
+if type brew &>/dev/null; then
+FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+autoload -Uz compinit
+compinit
+fi
+# END zsh-completions
+
+
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Fig post block. Keep at the bottom of this file.
+eval "$(fig init zsh post)"
+
