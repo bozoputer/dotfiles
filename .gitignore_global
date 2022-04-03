@@ -46,3 +46,7 @@ node_modules/
 ehthumbs.db
 Thumbs.db
 Icon
+
+# VS CODE generated files #
+######################
+.vscode/
