@@ -1,3 +1,7 @@
+# Fig pre block. Keep at the top of this file.
+export PATH="${PATH}:${HOME}/.local/bin"
+eval "$(fig init bash pre)"
+
 source ~/.profile
 # Aliases
 alias ls='ls -GFh'
@@ -36,3 +40,7 @@ export PATH=$HOME/.composer/vendor/bin:$PATH
 
 # Add MongoDB to PATH
 export PATH=$HOME/mongodb/mongodb-osx-x86_64-3.6.0/bin:$PATH
+
+# Fig post block. Keep at the bottom of this file.
+eval "$(fig init bash post)"
+
