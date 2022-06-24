@@ -1,7 +1,5 @@
 # Fig pre block. Keep at the top of this file.
-export PATH="${PATH}:${HOME}/.local/bin"
-eval "$(fig init bash pre)"
-
+[[ -f "$HOME/.fig/shell/bash_profile.pre.bash" ]] && . "$HOME/.fig/shell/bash_profile.pre.bash"
 source ~/.profile
 # Aliases
 alias ls='ls -GFh'
@@ -42,5 +40,4 @@ export PATH=$HOME/.composer/vendor/bin:$PATH
 export PATH=$HOME/mongodb/mongodb-osx-x86_64-3.6.0/bin:$PATH
 
 # Fig post block. Keep at the bottom of this file.
-eval "$(fig init bash post)"
-
+[[ -f "$HOME/.fig/shell/bash_profile.post.bash" ]] && . "$HOME/.fig/shell/bash_profile.post.bash"
