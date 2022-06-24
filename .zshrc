@@ -1,7 +1,5 @@
 # Fig pre block. Keep at the top of this file.
-export PATH="${PATH}:${HOME}/.local/bin"
-eval "$(fig init zsh pre)"
-
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -36,6 +34,8 @@ export ZSH=/Users/e/.oh-my-zsh
 
 # Path to git
 export PATH=/usr/local/git/bin/git:$PATH
+
+neofetch
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -134,6 +134,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 alias ll="ls -al"
 alias dd="cd /Users/e/Desktop"
 alias projects="cd /Users/e/Projects && ls"
+alias react="cd /Users/e/Projects/React && ls"
 alias documents="cd /Users/e/Documents"
 alias gs="git status"
 alias dl="cd ~/Desktop && youtube-dl"
@@ -147,16 +148,12 @@ alias push="git push origin HEAD"
 alias zsh="vim ~/.zshrc"
 alias globals="npm list -g --depth 0"
 alias shot="screencapture -x -T 3 ~/Desktop/sc.png"
-# CODESMITH STUFF
-alias cs="cd /Users/e/Projects/Codesmith && ls"
-alias hhpull="cd /Users/e/Projects/Codesmith/Hack-Hours && git pull upstream main"
 
 # Unused aliases
 # alias showfiles="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
 # alias hidefiles="defaults write com.apple.finder AppleShowAllFiles NO && killall Finder"
 # above aliases can be done with MacOS shortcut: ⌘ ⇧ .
 
-# alias crapn="create-react-native-app"
 
 # zsh-completions
 if type brew &>/dev/null; then
@@ -171,5 +168,4 @@ fi
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Fig post block. Keep at the bottom of this file.
-eval "$(fig init zsh post)"
-
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
