@@ -1,5 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -23,6 +21,10 @@ export PATH=$PATH:/Users/e/bin
 # Add Ruby to PATH
 export PATH=$PATH:/Users/e/.gem/ruby/2.6.0/bin
 
+# Add Python3 to PATH
+export PATH=$PATH:/usr/bin/python3
+
+
 # Add MongoDB to PATH
 # export PATH=$HOME/mongodb/mongodb-osx-x86_64-3.6.0/bin:$PATH
 
@@ -41,7 +43,7 @@ neofetch
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="dracula"
-ZSH_THEME="headline"
+#ZSH_THEME="headline"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -94,6 +96,7 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git z zsh-syntax-highlighting macos
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -134,6 +137,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 alias ll="ls -al"
 alias dd="cd /Users/e/Desktop"
 alias projects="cd /Users/e/Projects && ls"
+alias templates="cd /Users/e/Projects/_templates && ls"
 alias react="cd /Users/e/Projects/React && ls"
 alias documents="cd /Users/e/Documents"
 alias gs="git status"
@@ -148,6 +152,10 @@ alias push="git push origin HEAD"
 alias zsh="vim ~/.zshrc"
 alias globals="npm list -g --depth 0"
 alias shot="screencapture -x -T 3 ~/Desktop/sc.png"
+alias omz="omz update"
+alias tuts="cd /Users/e/Projects/tutelage"
+alias ignore="cp /Users/e/dotfiles/.gitignore ."
+alias ip="curl ifconfig.me"
 
 # Unused aliases
 # alias showfiles="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
@@ -167,5 +175,5 @@ fi
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+eval "$(starship init zsh)"
