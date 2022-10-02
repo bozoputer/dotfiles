@@ -90,5 +90,5 @@ format = '[ $symbol ($version) ]($style)'
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#C77DFF"
+style = "bold bg:#C77DFF"
 format = '[  $time ]($style)'
