@@ -1,3 +1,4 @@
+# https://coolors.co/palette/10002b-240046-3c096c-5a189a-7b2cbf-9d4edd-c77dff-e0aaff
 format = """
 [](#240046)\
 $username\
@@ -91,4 +92,5 @@ format = '[ $symbol ($version) ]($style)'
 disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bold bg:#C77DFF"
-format = '[  $time ]($style)'
+# format = '[  $time ]($style)'
+format = '[ 🚀 ]($style)'
