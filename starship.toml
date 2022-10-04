@@ -93,4 +93,4 @@ disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bold bg:#C77DFF"
 # format = '[  $time ]($style)'
-format = '[ 🚀 ]($style)'
+format = '[ 😈 ]($style)'
