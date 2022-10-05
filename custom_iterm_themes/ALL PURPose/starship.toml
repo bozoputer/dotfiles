@@ -1,13 +1,14 @@
+# All PURPose
 # https://coolors.co/palette/10002b-240046-3c096c-5a189a-7b2cbf-9d4edd-c77dff-e0aaff
 format = """
-[](#240046)\
+[](#03071E)\
 $username\
-[](bg:#3C096C fg:#240046)\
+[](bg:#3C096C fg:#03071E)\
 $directory\
-[](fg:#3C096C bg:#5A189A)\
+[](fg:#3C096C bg:#370617)\
 $git_branch\
 $git_status\
-[](fg:#5A189A bg:#7B2CBF)\
+[](fg:#370617 bg:#7B2CBF)\
 $nodejs\
 $c\
 $golang\
@@ -26,8 +27,8 @@ add_newline = false
 # You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
-style_user = "bg:#240046"
-style_root = "bg:#240046"
+style_user = "bg:#03071E"
+style_root = "bg:#03071E"
 format = '[$user ]($style)'
 
 [directory]
@@ -66,11 +67,11 @@ format = '[ $symbol $context ]($style) $path'
 
 [git_branch]
 symbol = ""
-style = "bg:#5A189A"
+style = "bg:#370617"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#5A189A"
+style = "bg:#370617"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
