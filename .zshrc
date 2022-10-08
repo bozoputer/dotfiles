@@ -7,7 +7,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/Applications/MAMP/bin/php/php7.1.6/bin:$PATH
 
 # Add Apache Ant to PATH
-export PATH=/Users/e/apache-ant-1.10.1/bin:$PATH
+export PATH=/Users/twrk/apache-ant-1.10.1/bin:$PATH
 
 # Add Composer to PATH
 export PATH=$HOME/.composer/vendor/bin:$PATH
@@ -16,10 +16,10 @@ export PATH=$HOME/.composer/vendor/bin:$PATH
 export PATH="$PATH:yarn global bin" 
 
 # Add personal bin directory to PATH
-export PATH=$PATH:/Users/e/bin
+export PATH=$PATH:/Users/twrk/bin
 
 # Add Ruby to PATH
-export PATH=$PATH:/Users/e/.gem/ruby/2.6.0/bin
+export PATH=$PATH:/Users/twrk/.gem/ruby/2.6.0/bin
 
 # Add Python3 to PATH
 export PATH=$PATH:/usr/bin/python3
@@ -32,7 +32,7 @@ export PATH=$PATH:/usr/bin/python3
 export PATH=$PATH:./node_modules/.bin
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/e/.oh-my-zsh
+export ZSH=/Users/twrk/.oh-my-zsh
 
 # Path to git
 export PATH=/usr/local/git/bin/git:$PATH
@@ -135,10 +135,10 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -al"
-alias dd="cd /Users/e/Desktop"
-alias projects="cd /Users/e/Projects && ls"
-alias templates="cd /Users/e/Projects/_templates && ls"
-alias react="cd /Users/e/Projects/React && ls"
+alias dd="cd /Users/twrk/Desktop"
+alias projects="cd /Users/twrk/Projects && ls"
+alias templates="cd /Users/twrk/Projects/_templates && ls"
+alias react="cd /Users/twrk/Projects/React && ls"
 alias documents="cd /Users/e/Documents"
 alias gs="git status"
 alias dl="cd ~/Desktop && youtube-dl"
@@ -153,8 +153,8 @@ alias zsh="vim ~/.zshrc"
 alias globals="npm list -g --depth 0"
 alias shot="screencapture -x -T 3 ~/Desktop/sc.png"
 alias omz="omz update"
-alias tuts="cd /Users/e/Projects/tutelage"
-alias ignore="cp /Users/e/dotfiles/.gitignore ."
+alias tuts="cd /Users/twrk/Projects/tutelage"
+alias ignore="cp /Users/twrk/dotfiles/.gitignore ."
 alias ip="curl ifconfig.me"
 
 # Unused aliases
