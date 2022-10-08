@@ -1,11 +1,10 @@
 # Prompt Section Colors
-November Gold: #F4B362
-Amaranth (Pink): #EF73AE
-Eugenia (Red): #EC3E65
-French Sky: #76B6FF
-Rare Wind (Green): #5FF3D1
-White: #E6E6E6
-Nero: #252526
+1: #FF75B5
+2: #19F9D8
+3: #45A9F9
+4: #B084EB
+5: #FF4B82
+6: #FFB86C
 
 # iTerm 2 ANSI
 | Color  | Normal   | Bright  |

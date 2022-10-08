@@ -1,0 +1,36 @@
+// Pink+Orange+Red
+.light-pink { #FF9AC1 }
+.pink { #FF75B5 }
+.red { #FF2C6D }
+.light-red { #FF4B82 }
+.orange { #FFB86C }
+.light-orange { #FFCC95}
+
+// Blue+Purple+Green
+.blue { #45A9F9}
+.light-blue { #6FC1FF}
+.purple { #B084EB}
+.light-purple { #BCAAFE}
+.green { #19f9d8}
+.light-green { #6FE7D2}
+
+// Gray Scale
+.charcoal { #222223}
+.very-dark-gray { #2a2c2d}
+.seal { #31353a}
+.gray { #373B41}
+.steel-gray { #4E5260}
+.light-midnight { #676B79}
+.light-gray { #757575 }
+.contrast-gray { #BBBBBB }
+.lighter-gray { #CDCDCD }
+.very-light-gray { #E6E6E6 }
+
+// Fades
+.light-orange-fade { #FFCC9560 }
+.light-pink-fade { #FF9AC170 }
+.purple-fade { #B084EB60 }
+.green-fade { #19f9d899 }
+.gray-fade { #373B4199 }
+.lighter-gray-fade { #CDCDCD30 }
+.very-light-gray-fade { #FFFFFF }

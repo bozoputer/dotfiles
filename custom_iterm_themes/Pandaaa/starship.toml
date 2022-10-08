@@ -1,33 +1,30 @@
-# Campfire
-# https://coolors.co/03071e-370617-6a040f-9d0208-d00000-dc2f02-e85d04-f48c06-faa307-ffba08
-
 # SECTIONS
-# 1: 03071E
-# 2: 370617
-# 3: D00000
-# 4: E85D04 
-# 5: F48C06
-# 6: FFBA08 
+# 1: #FF75B5
+# 2: #19F9D8
+# 3: #45A9F9
+# 4: #B084EB
+# 5: #FF4B82
+# 6: #FFB86C
 
 format = """
-[](#03071E)\
+[](#FF75B5)\
 $username\
-[](bg:#370617 fg:#03071E)\
+[](bg:#19F9D8 fg:#FF75B5)\
 $directory\
-[](fg:#370617 bg:#D00000)\
+[](fg:#19F9D8 bg:#45A9F9)\
 $git_branch\
 $git_status\
-[](fg:#D00000 bg:#E85D04)\
+[](fg:#45A9F9 bg:#B084EB)\
 $nodejs\
 $c\
 $golang\
 $java\
 $rust\
-[](fg:#E85D04 bg:#F48C06)\
+[](fg:#B084EB bg:#19F9D8)\
 $docker_context\
-[](fg:#F48C06 bg:#FFBA08)\
+[](fg:#19F9D8 bg:#FFB86C)\
 $time\
-[ ](fg:#FFBA08)\
+[ ](fg:#FFB86C)\
 """
 
 # Disable the blank line at the start of the prompt
@@ -36,12 +33,12 @@ add_newline = false
 # You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
-style_user = "bg:#03071E"
-style_root = "bg:#03071E"
+style_user = "bold bg:#FF75B5"
+style_root = "bold bg:#FF75B5"
 format = '[$user ]($style)'
 
 [directory]
-style = "bg:#370617"
+style = "bold bg:#19F9D8"
 format = "[ $path ]($style)"
 truncation_length = 5
 truncation_symbol = "…/"
@@ -61,46 +58,46 @@ truncation_symbol = "…/"
 
 [nodejs]
 symbol = ""
-style = "bg:#E85D04"
+style = "bold bg:#B084EB"
 format = '[ $symbol ($version) ]($style)'
 
 [c]
 symbol = " "
-style = "bg:#E85D04"
+style = "bold bg:#B084EB"
 format = '[ $symbol ($version) ]($style)'
 
 [docker_context]
 symbol = " "
-style = "bg:#F48C06"
+style = "bold bg:#FF4B82"
 format = '[ $symbol $context ]($style) $path'
 
 [git_branch]
 symbol = ""
-style = "bg:#D00000"
+style = "bold bg:#45A9F9"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#D00000"
+style = "bold bg:#45A9F9"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
 symbol = " "
-style = "bg:#E85D04"
+style = "bold bg:#B084EB"
 format = '[ $symbol ($version) ]($style)'
 
 [java]
 symbol = " "
-style = "bg:#E85D04"
+style = "bold bg:#B084EB"
 format = '[ $symbol ($version) ]($style)'
 
 [rust]
 symbol = ""
-style = "bg:#E85D04"
+style = "bold bg:#B084EB"
 format = '[ $symbol ($version) ]($style)'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bold bg:#FFBA08"
+style = "bold bg:#FFB86C"
 # format = '[  $time ]($style)'
-format = '[ 🔥 ]($style)'
+format = '[ 🐼 ]($style)'
