@@ -68,8 +68,10 @@ format = '[ $symbol ($version) ]($style)'
 
 [docker_context]
 symbol = " "
-style = "bold bg:#FF4B82"
-format = '[ $symbol $context ]($style) $path'
+# style = "bold bg:#FF4B82"
+style = "bold bg:#B084EB fg:#E6E6E6"
+# format = '[ $symbol $context ]($style) $path'
+format = '[ $symbol $context ]($style)'
 
 [git_branch]
 symbol = ""
@@ -101,3 +103,6 @@ time_format = "%R" # Hour:Minute Format
 style = "bold bg:#FFB86C"
 # format = '[  $time ]($style)'
 format = '[ 🐼 ]($style)'
+
+[cmd_duration]
+min_time = 5000
