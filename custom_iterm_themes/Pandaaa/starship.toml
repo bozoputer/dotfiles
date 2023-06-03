@@ -8,8 +8,9 @@
 
 format = """
 [](#FF2C6D)\
-$username\
+[  ](bg:#FF2C6D fg:#FFFFFF)\
 [](bg:#19F9D8 fg:#FF2C6D)\
+[  ](bg:#19F9D8)\
 $directory\
 [](fg:#19F9D8 bg:#45A9F9)\
 $git_branch\
@@ -27,18 +28,21 @@ $time\
 [ ](fg:#FFB86C)\
 """
 
+# Timeout for executed commands
+command_timeout = 2000
+
 # Disable the blank line at the start of the prompt
 add_newline = false
 
 # You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
-style_user = "bg:#FF2C6D"
-style_root = "bg:#FF2C6D"
+style_user = "bg:#FF2C6D fg:#e6e6e6"
+style_root = "bg:#FF2C6D fg:#e6e6e6"
 format = '[$user ]($style)'
 
 [directory]
-style = "bold bg:#19F9D8"
+style = "bg:#19F9D8 fg:#585972"
 format = "[ $path ]($style)"
 truncation_length = 5
 truncation_symbol = "…/"
@@ -58,28 +62,28 @@ truncation_symbol = "…/"
 
 [nodejs]
 symbol = ""
-style = "bold bg:#FF9AC1"
+style = "bg:#FF9AC1 fg:#585972"
 format = '[ $symbol ($version) ]($style)'
 
 [c]
 symbol = " "
-style = "bold bg:#FF9AC1"
+style = "bg:#FF9AC1"
 format = '[ $symbol ($version) ]($style)'
 
 [docker_context]
 symbol = " "
-# style = "bold bg:#FF4B82"
-style = "bold bg:#B084EB fg:#E6E6E6"
+# style = "bg:#FF4B82"
+style = "bg:#B084EB fg:#E6E6E6"
 # format = '[ $symbol $context ]($style) $path'
 format = '[ $symbol $context ]($style)'
 
 [git_branch]
 symbol = ""
-style = "bg:#45A9F9"
+style = "bg:#45A9F9 fg:#e6e6e6"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#45A9F9"
+style = "bg:#45A9F9 fg:#e6e6e6"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
@@ -100,9 +104,9 @@ format = '[ $symbol ($version) ]($style)'
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bold bg:#FFB86C"
+style = "bg:#FFB86C"
 # format = '[  $time ]($style)'
-format = '[ 🐼 ]($style)'
+format = '[ 🚀 ]($style)'
 
 [cmd_duration]
 min_time = 5000
