@@ -37,8 +37,6 @@ export ZSH=/Users/twrk/.oh-my-zsh
 # Path to git
 export PATH=/usr/local/git/bin/git:$PATH
 
-neofetch
-
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -141,6 +139,7 @@ alias templates="cd /Users/twrk/Projects/_templates && ls"
 alias react="cd /Users/twrk/Projects/React && ls"
 alias documents="cd /Users/e/Documents"
 alias gs="git status"
+alias push="git push origin main"
 alias dl="cd ~/Desktop && youtube-dl"
 alias dl2="cd ~/Desktop && youtube-dl --ignore-config"
 alias chistory="echo "" > ~/.zsh_history & exec $SHELL -l"
@@ -156,6 +155,27 @@ alias omz="omz update"
 alias tuts="cd /Users/twrk/Projects/tutelage"
 alias ignore="cp /Users/twrk/dotfiles/.gitignore ."
 alias ip="curl ifconfig.me"
+alias newvite="npm create vite@latest"
+
+
+# MISC FUNCTIONS
+favicon () {
+	cp ~/projects/favicon.ico .
+	echo "Favicon copied to this directory!"
+}
+know () {
+	cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Knowledge-God
+	echo "Changed to the Knowledge-God directory!"
+}
+dddevs () {
+	cd ~/projects/dddevs
+	echo "Changed to the dddevs directory!"
+}
+
+eslint () {
+	cp ~/projects/.eslintrc.json .
+	echo "eslint config copied to this directory!"
+}
 
 # Unused aliases
 # alias showfiles="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
