@@ -105,8 +105,9 @@ format = '[ $symbol ($version) ]($style)'
 disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:#FFB86C"
-# format = '[  $time ]($style)'
-format = '[ 🚀 ]($style)'
+format = '[  $time ]($style)'
+# format = '[ 🚀 ]($style)'
+# format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
 
 [cmd_duration]
 min_time = 5000
