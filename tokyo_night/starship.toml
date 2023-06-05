@@ -1,8 +1,8 @@
 format = """
-[](bg:#414e62 fg:#414e62)\
-[](bg:#5E6A81 fg:#5E6A81)\
-[](bg:#7B89A6 fg:#7B89A6)\
-[  ](bg:#a3aed2 fg:#090c0c)\
+[ ](bg:#414e62 fg:#414e62)\
+[ ](bg:#5E6A81 fg:#5E6A81)\
+[ ](bg:#7B89A6 fg:#7B89A6)\
+[  ](bg:#a3aed2 fg:#090c0c)\
 [](bg:#769ff0 fg:#a3aed2)\
 $directory\
 [](fg:#769ff0 bg:#394260)\
@@ -17,6 +17,8 @@ $php\
 $time\
 [ ](fg:#1d2230)\
 $character"""
+
+# [  ](bg:#a3aed2 fg:#090c0c)\
 
 [directory]
 style = "fg:#e3e5e5 bg:#769ff0"
