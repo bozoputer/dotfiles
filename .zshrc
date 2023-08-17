@@ -119,6 +119,10 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+# Set default editor to vim
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # nvm
 # source ~/dotfiles/.zshrc
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
