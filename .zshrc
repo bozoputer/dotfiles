@@ -137,7 +137,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -al"
-alias dd="cd /Users/twrk/Desktop"
+alias dd="cd /Users/twrk/Desktop && ls"
 alias projects="cd /Users/twrk/Projects && ls"
 alias templates="cd /Users/twrk/Projects/_templates && ls"
 alias react="cd /Users/twrk/Projects/React && ls"
@@ -195,7 +195,6 @@ autoload -Uz compinit
 compinit
 fi
 # END zsh-completions
-
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
