@@ -27,7 +27,7 @@ set encoding=utf-8
 " Whitespace
 set wrap
 set textwidth=79
-set tabstop=4
+set tabstop=2
 
 " Blink cursor in Insert mode
 set guicursor+=n-v-c:blinkon0

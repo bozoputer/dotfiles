@@ -1,0 +1,383 @@
+{
+  //How to disable crash reporting
+  "editor.fontFamily": "Operator Mono Lig Book",
+  "editor.fontWeight": 300,
+  "editor.fontSize": 18,
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "wordWrapColumn",
+  "vim.leader": ",",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      // "before": [
+      //   "<Esc>"
+      // ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  // "vim.easymotionMarkerFontFamily": "Helvetica",
+  // "vim.easymotionMarkerForegroundColorOneChar": "#2a212c",
+  // "vim.easymotionMarkerForegroundColorTwoChar": "#2a212c",
+  // "vim.easymotionMarkerBackgroundColor": "#fff",
+  // "vim.easymotionMarkerWidthPerChar": 18,
+  // "vim.easymotionMarkerHeight": 24,
+  // "vim.easymotionMarkerFontSize": "18",
+  "vim.otherModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        " "
+      ],
+      "after": [
+        "leader",
+        "leader",
+        "leader",
+        "b",
+        "d",
+        "w"
+      ]
+    }
+  ],
+  "vim.useCtrlKeys": true,
+  "vim.easymotion": true,
+  "terminal.integrated.fontSize": 18,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "[go]": {
+    "editor.insertSpaces": false
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  // Configure file associations to languages (e.g. "*.extension": "html"). These have precedence over the default associations of the languages installed.
+  "files.associations": {
+    "*.htaccess": "txt",
+    "*.pug": "jade"
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.renderWhitespace": "all",
+  "emmet.variables": {
+    "charset": "utf-8"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  // Use ZSH as the  integrated terminal shell.
+  ///"terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+  // https://github.com/kosimst/FiraFlott
+  // Fixes italics for Operator Mono
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "Comment",
+        "scope": [
+          "comment",
+          "punctuation.definition.comment"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "Keyword, Storage",
+        "scope": [
+          "Keyword",
+          "Storage"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "Keyword Control",
+        "scope": [
+          "keyword.control"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "entity.other.attribute-name",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "entity.name.method.js",
+        "scope": [
+          "entity.name.method.js"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "Language methods",
+        "scope": [
+          "variable.language"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "HTML Attributes",
+        "scope": [
+          "text.html.basic entity.other.attribute-name.html",
+          "text.html.basic entity.other.attribute-name"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "Decorators",
+        "scope": [
+          "tag.decorator.js entity.name.tag.js",
+          "tag.decorator.js punctuation.definition.tag.js"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "ES7 Bind Operator",
+        "scope": [
+          "source.js constant.other.object.key.js string.unquoted.label.js"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "Markup - Italic",
+        "scope": [
+          "markup.italic"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "Markup - Bold-Italic",
+        "scope": [
+          "markup.bold markup.italic",
+          "markup.italic markup.bold",
+          "markup.quote markup.bold",
+          "markup.bold markup.italic string",
+          "markup.italic markup.bold string",
+          "markup.quote markup.bold string"
+        ],
+        "settings": {
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "name": "Markup - Quote",
+        "scope": [
+          "markup.quote"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "variable.other",
+        "settings": {}
+      },
+      {
+        "scope": "entity.name.function",
+        "settings": {}
+      },
+      {
+        "scope": "support.function",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "string",
+        "settings": {}
+      }
+    ]
+  },
+  "vim.statusBarColors.normal": [
+    "#1a1b26",
+    "#7AA2F7"
+  ],
+  "vim.statusBarColors.insert": [
+    "#9ECE6A",
+    "#1a1b26"
+  ],
+  "vim.statusBarColors.visual": [
+    "#CFC9C2",
+    "#1a1b26"
+  ],
+  "vim.statusBarColors.visualline": [
+    "#CFC9C2",
+    "#1a1b26"
+  ],
+  "vim.statusBarColors.surroundinputmode": [
+    "#ffff80",
+    "#2a212c"
+  ],
+  "vim.statusBarColors.visualblock": [
+    "#C0CAF5",
+    "#1a1b26"
+  ],
+  "vim.statusBarColors.searchinprogressmode": [
+    "#19F9D8",
+    "#1a1b26"
+  ],
+  "vim.statusBarColors.replace": [
+    "#FF9E64",
+    "#1a1b26"
+  ],
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "update.mode": "start",
+  "editor.tabSize": 2,
+  "editor.linkedEditing": false,
+  "editor.minimap.enabled": false,
+  "editor.cursorBlinking": "phase",
+  "terminal.integrated.cursorBlinking": true,
+  "extensions.ignoreRecommendations": false,
+  "html.format.wrapLineLength": 80,
+  "workbench.editorAssociations": {
+    "*.html": "default",
+    "*.png": "imagePreview.previewEditor",
+    "*.svg": "default"
+  },
+  "editor.hover.enabled": true,
+  "vim.statusBarColorControl": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[markdown]": {
+    "editor.formatOnSave": false,
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "editor.accessibilitySupport": "off",
+  "files.trimTrailingWhitespace": true,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "gitlens.defaultGravatarsStyle": "retro",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "quokka.startViewStatusBar": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "editor.tabCompletion": "onlySnippets",
+  "files.defaultLanguage": "javascript",
+  "terminal.integrated.fontWeightBold": "normal",
+  "editor.detectIndentation": false,
+  "editor.inlineSuggest.enabled": true,
+  // https://stackoverflow.com/questions/48859169/error-types-can-only-be-used-in-a-ts-file-visual-studio-code-using-ts-che#answer-50726464
+  "javascript.validate.enable": false,
+  "editor.formatOnSave": true,
+  "[postcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "prettier.requireConfig": true,
+  "workbench.editor.decorations.colors": true,
+  "workbench.editor.decorations.badges": true,
+  "diffEditor.renderSideBySide": false,
+  "workbench.sideBar.location": "right",
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "settingsSync.ignoredSettings": [
+    "editor.defaultFormatter",
+    "editor.fontFamily"
+  ],
+  "editor.codeLensFontFamily": "Operator Mono Lig Book",
+  "editor.codeLensFontSize": 11,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "settingsSync.ignoredExtensions": [
+    "ms-vsliveshare.vsliveshare",
+    "dbaeumer.vscode-eslint",
+    "ms-azuretools.vscode-docker",
+    "svelte.svelte-vscode",
+    "sketchbuch.vsc-quokka-statusbar",
+    "wallabyjs.quokka-vscode",
+    "wallabyjs.console-ninja",
+    "pranaygp.vscode-css-peek",
+    "usernamehw.errorlens",
+    "bradlc.vscode-tailwindcss",
+    "blanu.vscode-styled-jsx",
+    "attilabuti.mustache-syntax-vscode",
+    "sleistner.vscode-fileutils",
+    "csstools.postcss",
+    "unifiedjs.vscode-mdx",
+    "mgmcdermott.vscode-language-babel"
+  ],
+  "workbench.colorTheme": "Tokyo Night",
+  "typescript.validate.enable": true,
+  "typescript.experimental.tsserver.web.enableProjectWideIntellisense": true,
+  "window.zoomLevel": 1,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "python.defaultInterpreterPath": "/usr/local/bin/python3",
+  "git.openRepositoryInParentFolders": "never",
+  "svelte.enable-ts-plugin": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#1a1b26",
+    "statusBar.noFolderBackground": "#1a1b26",
+    "statusBar.debuggingBackground": "#1a1b26",
+    "statusBar.foreground": "#7AA2F7",
+    "statusBar.debuggingForeground": "#7AA2F7"
+  },
+  "workbench.settings.openDefaultSettings": true,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu (WSL)": {
+      "path": "C:\\Windows\\System32\\wsl.exe",
+      "args": [
+        "-d",
+        "Ubuntu"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.cursorStylePerMode.insert": "line",
+  "vim.cursorStylePerMode.replace": "underline",
+  "vim.cursorStylePerMode.visual": "block-outline",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editor.empty.hint": "hidden",
+  "indentRainbow.indicatorStyle": "light",
+  "indentRainbow.lightIndicatorStyleLineWidth": 1,
+  "indentRainbow.colors": [
+    "rgba(187, 154, 247, 0.3)",
+    "rgba(122, 162, 247, 0.3)",
+    "rgba(125, 207, 255, 0.3)",
+    "rgba(115, 218, 202, 0.3)",
+  ],
+  "indentRainbow.errorColor": "rgb(255, 0, 0)"
+}
