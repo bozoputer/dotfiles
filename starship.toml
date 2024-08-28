@@ -20,7 +20,7 @@ $character"""
 
 right_format = """
 [](fg:#1d2230)\
-[ ](fg:#769ff0 bg:#1d2230)\
+$battery\
 [](bg:#1d2230 fg:#394260)\
 $time\
 [ ](bg:#414e62)\
@@ -83,3 +83,22 @@ disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:#1d2230"
 format = '[[$time  ](fg:#e3e5e5 bg:#394260)]($style)'
+
+[battery]
+full_symbol = ' '
+charging_symbol = ' '
+discharging_symbol = ' '
+format = '[$symbol $percentage ](fg:#e0af68 bg:#1d2230)'
+
+[[battery.display]]
+threshold = 90
+style = 'bold green'
+
+[[battery.display]]
+threshold = 70
+style = 'bold yellow'
+
+[[battery.display]]
+threshold = 50
+style = 'bold red'
+
