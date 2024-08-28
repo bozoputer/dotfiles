@@ -84,16 +84,17 @@ format = '[[$time  ](fg:#e3e5e5 bg:#394260)]($style)'
 full_symbol = ' '
 charging_symbol = ''
 discharging_symbol = ' '
-format = '[$symbol $percentage ](fg:#e0af68 bg:#1d2230)'
+unknown_symbol = ''
+format = '[$symbol $percentage ]($style)'
 
 [[battery.display]]
-threshold = 90
-style = 'bold green'
+threshold = 100
+style = 'bold fg:#9ece6a bg:#1d2230'
 
 [[battery.display]]
-threshold = 70
-style = 'bold yellow'
+threshold = 60
+style = 'bold fg:#e0af68 bg:#1d2230'
 
 [[battery.display]]
-threshold = 50
-style = 'bold red'
+threshold = 30
+style = 'bold fg:#f7768e bg:#1d2230'
