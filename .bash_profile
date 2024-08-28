@@ -36,3 +36,5 @@ export PATH=$HOME/.composer/vendor/bin:$PATH
 
 # Add MongoDB to PATH
 export PATH=$HOME/mongodb/mongodb-osx-x86_64-3.6.0/bin:$PATH
+
+[ -s "/Users/twrk/.scm_breeze/scm_breeze.sh" ] && source "/Users/twrk/.scm_breeze/scm_breeze.sh"
