@@ -28,10 +28,6 @@ $time\
 [ ](bg:#7B89A6)\
 """
 
-# [ ](bg:#a3aed2 fg:#1a1b26)\
-
-# [  ](bg:#a3aed2 fg:#090c0c)\
-
 [directory]
 style = "fg:#e3e5e5 bg:#769ff0"
 format = "[ $path ]($style)"
@@ -101,4 +97,3 @@ style = 'bold yellow'
 [[battery.display]]
 threshold = 50
 style = 'bold red'
-
