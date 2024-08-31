@@ -1,8 +1,8 @@
 accent: "#7aa2f7"
-# background: "#1a1b26"
-background:
-  top: '#1a1b26'
-  bottom: '#24283b'
+background: "#13141c"
+#background:
+#  top: '#13141c'
+#  bottom: '#16161f'
 details: darker
 foreground: "#a9b1d6"
 #background_image:
